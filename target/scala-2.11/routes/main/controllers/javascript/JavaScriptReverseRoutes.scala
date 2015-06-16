@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kou/site/elecon/conf/routes
-// @DATE:Thu Jun 04 21:16:29 JST 2015
+// @SOURCE:/home/kou/git/BC-EC/conf/routes
+// @DATE:Tue Jun 16 15:54:00 JST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }

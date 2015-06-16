@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/kou/site/elecon/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/kou/git/BC-EC/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: elecon#elecon_2.11;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for elecon#elecon_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies elecon#elecon_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bafe490[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c6e8bf0[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
@@ -413,7 +413,7 @@
 [0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.google.inject.extensions#guice-assistedinject;4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m		tried /home/kou/.ivy2/local/com.google.inject.extensions/guice-assistedinject/4.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
-[0m[[0mdebug[0m] [0m		tried /home/kou/site/elecon/repository/com.google.inject.extensions/guice-assistedinject/4.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /home/kou/git/BC-EC/repository/com.google.inject.extensions/guice-assistedinject/4.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
 [0m[[0mdebug[0m] [0m		tried /home/kou/Downloads/activator-1.3.2/repository/com.google.inject.extensions/guice-assistedinject/4.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
@@ -424,7 +424,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (827ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (720ms)[0m
 [0m[[0minfo[0m] [0mResolving com.google.inject.extensions#extensions-parent;4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.inject.extensions#extensions-parent;4.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.inject.extensions#extensions-parent;4.0[0m
@@ -6619,19 +6619,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4147ms :: artifacts dl 23ms[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT compile produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT runtime produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT test produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT provided produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT optional produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT compile-internal produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT runtime-internal produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT test-internal produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT plugin produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT sources produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT docs produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT pom produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT scala-tool produced in /home/kou/site/elecon/target/resolution-cache/reports/elecon-elecon_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4147ms resolve - 23ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4382ms :: artifacts dl 307ms[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT compile produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT runtime produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT test produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT provided produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT optional produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT compile-internal produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT runtime-internal produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT test-internal produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT plugin produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT sources produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT docs produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT pom produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for elecon#elecon_2.11;1.0-SNAPSHOT scala-tool produced in /home/kou/git/BC-EC/target/resolution-cache/reports/elecon-elecon_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (4382ms resolve - 307ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

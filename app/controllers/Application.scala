@@ -9,7 +9,7 @@ class Application extends Controller {
   // a method with no parameters that returns an Action value
   def index = Action {
    // Ok(views.html.index("Your new application is ready."))
-   // Ok("Hello world") 
+    Ok("Hello world") 
    /* implicit request =>
    Ok("Got request [" + request + "]") */
   

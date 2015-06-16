@@ -1,4 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/kou/site/elecon/conf/logback.xml,/home/kou/site/elecon/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/home/kou/site/elecon/conf/routes,/home/kou/site/elecon/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/home/kou/site/elecon/conf/application.conf,/home/kou/site/elecon/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/kou/git/BC-EC/conf/logback.xml,/home/kou/git/BC-EC/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/kou/git/BC-EC/conf/routes,/home/kou/git/BC-EC/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/kou/git/BC-EC/conf/application.conf,/home/kou/git/BC-EC/target/scala-2.11/classes/application.conf)[0m
