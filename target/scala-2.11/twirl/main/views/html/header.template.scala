@@ -35,29 +35,52 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- Dynamic nav bar-->  
     <script type="text/javascript">
-      $(document).ready(function () """),format.raw/*15.37*/("""{"""),format.raw/*15.38*/("""
-        """),format.raw/*16.9*/("""$('ul.nav > li').click(function (e) """),format.raw/*16.45*/("""{"""),format.raw/*16.46*/("""
+    /*  $(document).ready(function () """),format.raw/*16.39*/("""{"""),format.raw/*16.40*/("""
+        """),format.raw/*17.9*/("""$('ul.nav > li').click(function (e) """),format.raw/*17.45*/("""{"""),format.raw/*17.46*/("""
             
-            """),format.raw/*18.13*/("""$('ul.nav > li').removeClass('active');
-            $(this).addClass('active');             
-        """),format.raw/*20.9*/("""}"""),format.raw/*20.10*/("""
-        """),format.raw/*21.9*/("""e.preventDefault();
+            """),format.raw/*19.13*/("""$('ul.nav > li').removeClass('active');
+            e.preventDefault();
+            $(this).addClass('active');     
+            e.Default();        
+        """),format.raw/*23.9*/("""}"""),format.raw/*23.10*/(""");
+        
+      """),format.raw/*25.7*/("""}"""),format.raw/*25.8*/(""");
+*/
+      $(function()"""),format.raw/*27.19*/("""{"""),format.raw/*27.20*/("""
+  """),format.raw/*28.3*/("""function stripTrailingSlash(str) """),format.raw/*28.36*/("""{"""),format.raw/*28.37*/("""
+    """),format.raw/*29.5*/("""if(str.substr(-1) == '/') """),format.raw/*29.31*/("""{"""),format.raw/*29.32*/("""
+      """),format.raw/*30.7*/("""return str.substr(0, str.length - 1);
+    """),format.raw/*31.5*/("""}"""),format.raw/*31.6*/("""
+    """),format.raw/*32.5*/("""return str;
+  """),format.raw/*33.3*/("""}"""),format.raw/*33.4*/("""
 
-      """),format.raw/*23.7*/("""}"""),format.raw/*23.8*/(""");
+  """),format.raw/*35.3*/("""var url = window.location.pathname;  
+  var activePage = stripTrailingSlash(url);
+
+  $('.nav li a').each(function()"""),format.raw/*38.33*/("""{"""),format.raw/*38.34*/("""  
+    """),format.raw/*39.5*/("""var currentPage = stripTrailingSlash($(this).attr('href'));
+
+    if (activePage == currentPage) """),format.raw/*41.36*/("""{"""),format.raw/*41.37*/("""
+      """),format.raw/*42.7*/("""$(this).parent().addClass('active'); 
+    """),format.raw/*43.5*/("""}"""),format.raw/*43.6*/(""" 
+    """),format.raw/*44.5*/("""else"""),format.raw/*44.9*/("""{"""),format.raw/*44.10*/("""$(this).parent().removeClass('active');"""),format.raw/*44.49*/("""}"""),format.raw/*44.50*/("""
+  """),format.raw/*45.3*/("""}"""),format.raw/*45.4*/(""");
+"""),format.raw/*46.1*/("""}"""),format.raw/*46.2*/(""");
     </script>
 
     <style type="text/css">
-      h1"""),format.raw/*27.9*/("""{"""),format.raw/*27.10*/("""
-        """),format.raw/*28.9*/("""color: black !important; 
+      h1"""),format.raw/*50.9*/("""{"""),format.raw/*50.10*/("""
+        """),format.raw/*51.9*/("""color: black !important; 
         text-shadow: 0 0 0.2em #F0FFF0, 0 0 0.2em #F0FFF0, 0 0 0.2em #F0FFF0;
         opacity: 1;
-    """),format.raw/*31.5*/("""}"""),format.raw/*31.6*/("""
-      """),format.raw/*32.7*/(""".h3-1"""),format.raw/*32.12*/("""{"""),format.raw/*32.13*/("""
-        """),format.raw/*33.9*/("""color: white; text-shadow: black 0.1em 0.1em 0.2em
-      """),format.raw/*34.7*/("""}"""),format.raw/*34.8*/("""
+    """),format.raw/*54.5*/("""}"""),format.raw/*54.6*/("""
+      """),format.raw/*55.7*/(""".h3-1"""),format.raw/*55.12*/("""{"""),format.raw/*55.13*/("""
+        """),format.raw/*56.9*/("""color: white; text-shadow: black 0.1em 0.1em 0.2em
+      """),format.raw/*57.7*/("""}"""),format.raw/*57.8*/("""
 
-    """),format.raw/*36.5*/("""</style>
+    """),format.raw/*59.5*/("""</style>
   </head>
 
   <body>
@@ -114,11 +137,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object header extends header_Scope0.header
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 18:42:42 JST 2015
+                  DATE: Wed Jun 17 19:19:59 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/header.scala.html
-                  HASH: 103dce59d8569216a12e1abfbc76a14c3b57912b
-                  MATRIX: 611->0|767->130|781->136|847->182|1303->610|1332->611|1368->620|1432->656|1461->657|1515->683|1643->784|1672->785|1708->794|1762->821|1790->822|1871->876|1900->877|1936->886|2091->1014|2119->1015|2153->1022|2186->1027|2215->1028|2251->1037|2335->1094|2363->1095|2396->1101
-                  LINES: 25->1|28->4|28->4|28->4|39->15|39->15|40->16|40->16|40->16|42->18|44->20|44->20|45->21|47->23|47->23|51->27|51->27|52->28|55->31|55->31|56->32|56->32|56->32|57->33|58->34|58->34|60->36
+                  HASH: e70f8134b0338b9acbb5d828bfe3ceb423991408
+                  MATRIX: 611->0|767->130|781->136|847->182|1333->640|1362->641|1398->650|1462->686|1491->687|1545->713|1730->871|1759->872|1804->890|1832->891|1884->915|1913->916|1943->919|2004->952|2033->953|2065->958|2119->984|2148->985|2182->992|2251->1034|2279->1035|2311->1040|2352->1054|2380->1055|2411->1059|2554->1174|2583->1175|2617->1182|2741->1278|2770->1279|2804->1286|2873->1328|2901->1329|2934->1335|2965->1339|2994->1340|3061->1379|3090->1380|3120->1383|3148->1384|3178->1387|3206->1388|3287->1442|3316->1443|3352->1452|3507->1580|3535->1581|3569->1588|3602->1593|3631->1594|3667->1603|3751->1660|3779->1661|3812->1667
+                  LINES: 25->1|28->4|28->4|28->4|40->16|40->16|41->17|41->17|41->17|43->19|47->23|47->23|49->25|49->25|51->27|51->27|52->28|52->28|52->28|53->29|53->29|53->29|54->30|55->31|55->31|56->32|57->33|57->33|59->35|62->38|62->38|63->39|65->41|65->41|66->42|67->43|67->43|68->44|68->44|68->44|68->44|68->44|69->45|69->45|70->46|70->46|74->50|74->50|75->51|78->54|78->54|79->55|79->55|79->55|80->56|81->57|81->57|83->59
                   -- GENERATED --
               */
           

@@ -26,19 +26,27 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
 
 <html lang="en">
-  <title>EC on BC-Verify</title>
-   """),_display_(/*6.5*/header()),format.raw/*6.13*/("""
-    """),format.raw/*7.5*/("""<body>
+  <head>
+   <title>EC on BC-Verify</title>
+   """),_display_(/*7.5*/header()),format.raw/*7.13*/("""
+   """),format.raw/*8.4*/("""<style type="text/css">
+
+   </style>
+  </head>
+
+
+    <body>
       <div class="container">
         <p>Select a contract:</p>
         <input type="file" name="contract">
         <p><div class="container">
+          <button type="button" class="btn btn-primary">Search</button>
 		  <button type="button" class="btn btn-primary">Verify</button>
         </div></p>
       </div>
     </body>
-    """),_display_(/*16.6*/footer()),format.raw/*16.14*/("""
-"""),format.raw/*17.1*/("""</html>"""))
+    """),_display_(/*24.6*/footer()),format.raw/*24.14*/("""
+"""),format.raw/*25.1*/("""</html>"""))
       }
     }
   }
@@ -58,11 +66,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object verify extends verify_Scope0.verify
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 18:36:08 JST 2015
+                  DATE: Wed Jun 17 18:56:30 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/verify.scala.html
-                  HASH: 4beab92fc7007dcab1fe0c1ee5e08629345c4d8b
-                  MATRIX: 611->0|708->72|736->80|767->85|1058->350|1087->358|1115->359
-                  LINES: 25->1|30->6|30->6|31->7|40->16|40->16|41->17
+                  HASH: 95b7b804a2c362c9be26aaa666b025d033929663
+                  MATRIX: 611->0|718->82|746->90|776->94|1192->484|1221->492|1249->493
+                  LINES: 25->1|31->7|31->7|32->8|48->24|48->24|49->25
                   -- GENERATED --
               */
           

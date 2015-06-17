@@ -42,7 +42,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
         <div class="row">
             <div class="panel-group">
               <!--S&T-->
-                <div class="col-sm-4">
+                <div class="col-sm-4" > 
                   <div class = "panel panel-info">
                     <div class="panel-heading"><h3><span class="glyphicon glyphicon-pencil"></span>&nbspSign & Timestamp&nbsp<span class="glyphicon glyphicon-time"></h3></div>
                     <div class="panel-body panel-height"><p>Upload a contract</p>
@@ -96,10 +96,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object elecon extends elecon_Scope0.elecon
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 18:36:08 JST 2015
+                  DATE: Wed Jun 17 18:54:17 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/elecon.scala.html
-                  HASH: 0544366b2c72a0875c67c3f9d62ba21dc65f6b63
-                  MATRIX: 611->0|699->62|713->68|779->114|969->279|997->287|1029->292|1101->336|1130->337|1173->352|1223->375|1252->376|1285->382|2930->2001|2959->2009|2987->2010
+                  HASH: ebd4d6ff61c12dd0a320b7f3c1a58c953519d978
+                  MATRIX: 611->0|699->62|713->68|779->114|969->279|997->287|1029->292|1101->336|1130->337|1173->352|1223->375|1252->376|1285->382|2932->2003|2961->2011|2989->2012
                   LINES: 25->1|27->3|27->3|27->3|33->9|33->9|34->10|35->11|35->11|36->12|37->13|37->13|39->15|78->54|78->54|79->55
                   -- GENERATED --
               */

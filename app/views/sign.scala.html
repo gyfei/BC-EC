@@ -12,26 +12,35 @@
 
 
 <html lang="en">
-  <title>EC on BC-Sign</title>
-   @header()
-    <body>
-    <div class="container">
+  <head>
+    <title>EC on BC-Sign</title>
+    @header()
+    <style type="text/css">
+     .container-bg{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 0px;
+        background-color: #FFFACD;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-bg">
         <p>Select a contract:</p>
         <input type="file" name="contract">
     <p><div class="container">
         <button type="button" class="btn btn-primary">Sign</button>
 		<button type="button" class="btn btn-primary">Timestamp</button>
 		<button type="button" class="btn btn-primary">Verify</button>
-    </div></p>
+    </p></div>
 
-    <!-- can't be closed-->
+    
     <div class="alert alert-success">
     	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   		<strong>Success!</strong> Your contract have been uploaded successfully!
    	</div>
-    
-    <div id="footer"></div>
-</div>
-    </body>
+    </div>
+  </body>
     @footer()
 </html>

@@ -36,29 +36,38 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
 
 
 """),format.raw/*14.1*/("""<html lang="en">
-  <title>EC on BC-Sign</title>
-   """),_display_(/*16.5*/header()),format.raw/*16.13*/("""
-    """),format.raw/*17.5*/("""<body>
-    <div class="container">
+  <head>
+    <title>EC on BC-Sign</title>
+    """),_display_(/*17.6*/header()),format.raw/*17.14*/("""
+    """),format.raw/*18.5*/("""<style type="text/css">
+     .container-bg"""),format.raw/*19.19*/("""{"""),format.raw/*19.20*/("""
+        """),format.raw/*20.9*/("""margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 0px;
+        background-color: #FFFACD;
+     """),format.raw/*24.6*/("""}"""),format.raw/*24.7*/("""
+    """),format.raw/*25.5*/("""</style>
+  </head>
+
+  <body>
+    <div class="container-bg">
         <p>Select a contract:</p>
         <input type="file" name="contract">
     <p><div class="container">
         <button type="button" class="btn btn-primary">Sign</button>
 		<button type="button" class="btn btn-primary">Timestamp</button>
 		<button type="button" class="btn btn-primary">Verify</button>
-    </div></p>
+    </p></div>
 
-    <!-- can't be closed-->
+    
     <div class="alert alert-success">
     	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   		<strong>Success!</strong> Your contract have been uploaded successfully!
    	</div>
-    
-    <div id="footer"></div>
-</div>
-    </body>
-    """),_display_(/*36.6*/footer()),format.raw/*36.14*/("""
-"""),format.raw/*37.1*/("""</html>"""))
+    </div>
+  </body>
+    """),_display_(/*45.6*/footer()),format.raw/*45.14*/("""
+"""),format.raw/*46.1*/("""</html>"""))
       }
     }
   }
@@ -78,11 +87,11 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
 object sign extends sign_Scope0.sign
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 18:36:08 JST 2015
+                  DATE: Wed Jun 17 19:01:48 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/sign.scala.html
-                  HASH: b7b75266b571dd381bef2ba251337fd5f72f09d6
-                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|989->249|1067->301|1096->309|1128->314|1807->967|1836->975|1864->976
-                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|38->14|40->16|40->16|41->17|60->36|60->36|61->37
+                  HASH: af6d75489062405ac55bbeca7902e09fc59db0e0
+                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|989->249|1079->313|1108->321|1140->326|1210->368|1239->369|1275->378|1416->492|1444->493|1476->498|2126->1122|2155->1130|2183->1131
+                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|38->14|41->17|41->17|42->18|43->19|43->19|44->20|48->24|48->24|49->25|69->45|69->45|70->46
                   -- GENERATED --
               */
           
