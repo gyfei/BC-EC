@@ -6,19 +6,27 @@
    <title>EC on BC-Verify</title>
    @header()
    <style type="text/css">
-
-   </style>
+     .container-bg{
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-top: 0px;
+        background-color: #FFF5EE;
+     }
+     
+    </style>
   </head>
 
 
     <body>
       <div class="container">
+      <div class="jumbotron" style="background-color: #FFF5EE;">
         <p>Select a contract:</p>
         <input type="file" name="contract">
         <p><div class="container">
           <button type="button" class="btn btn-primary">Search</button>
 		  <button type="button" class="btn btn-primary">Verify</button>
         </div></p>
+      </div>
       </div>
     </body>
     @footer()

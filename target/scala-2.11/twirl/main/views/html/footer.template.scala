@@ -31,7 +31,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
 </body>
   <div class="container">
-    <footer style="margin-bottom:10px;">
+    <footer>
     	&copy; EC on BC 2015 
     	by Gao
     </footer>
@@ -58,9 +58,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object footer extends footer_Scope0.footer
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 17:48:26 JST 2015
+                  DATE: Wed Jun 17 19:30:12 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/footer.scala.html
-                  HASH: 70eaaae7ebd9339f18f71dcc74f6c1314aba53bd
+                  HASH: f17cb64ca19570bd1e7c5438b637ddaa46a40e0c
                   MATRIX: 611->0
                   LINES: 25->1
                   -- GENERATED --

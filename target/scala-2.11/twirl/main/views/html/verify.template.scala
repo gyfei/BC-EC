@@ -30,13 +30,20 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
    <title>EC on BC-Verify</title>
    """),_display_(/*7.5*/header()),format.raw/*7.13*/("""
    """),format.raw/*8.4*/("""<style type="text/css">
-
-   </style>
+     .container-bg"""),format.raw/*9.19*/("""{"""),format.raw/*9.20*/("""
+        """),format.raw/*10.9*/("""margin-left: 120px;
+        margin-right: 120px;
+        margin-top: 0px;
+        background-color: #FFF5EE;
+     """),format.raw/*14.6*/("""}"""),format.raw/*14.7*/("""
+     
+    """),format.raw/*16.5*/("""</style>
   </head>
 
 
     <body>
       <div class="container">
+      <div class="jumbotron" style="background-color: #FFF5EE;">
         <p>Select a contract:</p>
         <input type="file" name="contract">
         <p><div class="container">
@@ -44,9 +51,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 		  <button type="button" class="btn btn-primary">Verify</button>
         </div></p>
       </div>
+      </div>
     </body>
-    """),_display_(/*24.6*/footer()),format.raw/*24.14*/("""
-"""),format.raw/*25.1*/("""</html>"""))
+    """),_display_(/*32.6*/footer()),format.raw/*32.14*/("""
+"""),format.raw/*33.1*/("""</html>"""))
       }
     }
   }
@@ -66,11 +74,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object verify extends verify_Scope0.verify
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 18:56:30 JST 2015
+                  DATE: Wed Jun 17 19:55:12 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/verify.scala.html
-                  HASH: 95b7b804a2c362c9be26aaa666b025d033929663
-                  MATRIX: 611->0|718->82|746->90|776->94|1192->484|1221->492|1249->493
-                  LINES: 25->1|31->7|31->7|32->8|48->24|48->24|49->25
+                  HASH: 04df841531791cab0b56e025b98e0b368e308594
+                  MATRIX: 611->0|718->82|746->90|776->94|845->136|873->137|909->146|1050->260|1078->261|1116->272|1582->712|1611->720|1639->721
+                  LINES: 25->1|31->7|31->7|32->8|33->9|33->9|34->10|38->14|38->14|40->16|56->32|56->32|57->33
                   -- GENERATED --
               */
           

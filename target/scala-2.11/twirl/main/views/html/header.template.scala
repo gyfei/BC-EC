@@ -37,57 +37,43 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <!-- Dynamic nav bar-->  
     <script type="text/javascript">
-    /*  $(document).ready(function () """),format.raw/*16.39*/("""{"""),format.raw/*16.40*/("""
-        """),format.raw/*17.9*/("""$('ul.nav > li').click(function (e) """),format.raw/*17.45*/("""{"""),format.raw/*17.46*/("""
-            
-            """),format.raw/*19.13*/("""$('ul.nav > li').removeClass('active');
-            e.preventDefault();
-            $(this).addClass('active');     
-            e.Default();        
-        """),format.raw/*23.9*/("""}"""),format.raw/*23.10*/(""");
-        
-      """),format.raw/*25.7*/("""}"""),format.raw/*25.8*/(""");
-*/
-      $(function()"""),format.raw/*27.19*/("""{"""),format.raw/*27.20*/("""
-  """),format.raw/*28.3*/("""function stripTrailingSlash(str) """),format.raw/*28.36*/("""{"""),format.raw/*28.37*/("""
-    """),format.raw/*29.5*/("""if(str.substr(-1) == '/') """),format.raw/*29.31*/("""{"""),format.raw/*29.32*/("""
-      """),format.raw/*30.7*/("""return str.substr(0, str.length - 1);
-    """),format.raw/*31.5*/("""}"""),format.raw/*31.6*/("""
-    """),format.raw/*32.5*/("""return str;
-  """),format.raw/*33.3*/("""}"""),format.raw/*33.4*/("""
-
-  """),format.raw/*35.3*/("""var url = window.location.pathname;  
-  var activePage = stripTrailingSlash(url);
-
-  $('.nav li a').each(function()"""),format.raw/*38.33*/("""{"""),format.raw/*38.34*/("""  
-    """),format.raw/*39.5*/("""var currentPage = stripTrailingSlash($(this).attr('href'));
-
-    if (activePage == currentPage) """),format.raw/*41.36*/("""{"""),format.raw/*41.37*/("""
-      """),format.raw/*42.7*/("""$(this).parent().addClass('active'); 
-    """),format.raw/*43.5*/("""}"""),format.raw/*43.6*/(""" 
-    """),format.raw/*44.5*/("""else"""),format.raw/*44.9*/("""{"""),format.raw/*44.10*/("""$(this).parent().removeClass('active');"""),format.raw/*44.49*/("""}"""),format.raw/*44.50*/("""
-  """),format.raw/*45.3*/("""}"""),format.raw/*45.4*/(""");
-"""),format.raw/*46.1*/("""}"""),format.raw/*46.2*/(""");
+      $(function()"""),format.raw/*16.19*/("""{"""),format.raw/*16.20*/("""
+        """),format.raw/*17.9*/("""function stripTrailingSlash(str) """),format.raw/*17.42*/("""{"""),format.raw/*17.43*/("""
+          """),format.raw/*18.11*/("""if(str.substr(-1) == '/') """),format.raw/*18.37*/("""{"""),format.raw/*18.38*/("""
+            """),format.raw/*19.13*/("""return str.substr(0, str.length - 1);
+          """),format.raw/*20.11*/("""}"""),format.raw/*20.12*/("""
+          """),format.raw/*21.11*/("""return str;
+        """),format.raw/*22.9*/("""}"""),format.raw/*22.10*/("""
+        """),format.raw/*23.9*/("""var url = window.location.pathname;  
+        var activePage = stripTrailingSlash(url);
+        $('.nav li a').each(function()"""),format.raw/*25.39*/("""{"""),format.raw/*25.40*/("""  
+          """),format.raw/*26.11*/("""var currentPage = stripTrailingSlash($(this).attr('href'));
+          if (activePage == currentPage) """),format.raw/*27.42*/("""{"""),format.raw/*27.43*/("""
+            """),format.raw/*28.13*/("""$(this).parent().addClass('active'); 
+          """),format.raw/*29.11*/("""}"""),format.raw/*29.12*/(""" 
+          """),format.raw/*30.11*/("""else"""),format.raw/*30.15*/("""{"""),format.raw/*30.16*/("""$(this).parent().removeClass('active');"""),format.raw/*30.55*/("""}"""),format.raw/*30.56*/("""
+        """),format.raw/*31.9*/("""}"""),format.raw/*31.10*/(""");
+      """),format.raw/*32.7*/("""}"""),format.raw/*32.8*/(""");
     </script>
 
     <style type="text/css">
-      h1"""),format.raw/*50.9*/("""{"""),format.raw/*50.10*/("""
-        """),format.raw/*51.9*/("""color: black !important; 
+      h1"""),format.raw/*36.9*/("""{"""),format.raw/*36.10*/("""
+        """),format.raw/*37.9*/("""color: black !important; 
         text-shadow: 0 0 0.2em #F0FFF0, 0 0 0.2em #F0FFF0, 0 0 0.2em #F0FFF0;
         opacity: 1;
-    """),format.raw/*54.5*/("""}"""),format.raw/*54.6*/("""
-      """),format.raw/*55.7*/(""".h3-1"""),format.raw/*55.12*/("""{"""),format.raw/*55.13*/("""
-        """),format.raw/*56.9*/("""color: white; text-shadow: black 0.1em 0.1em 0.2em
-      """),format.raw/*57.7*/("""}"""),format.raw/*57.8*/("""
+    """),format.raw/*40.5*/("""}"""),format.raw/*40.6*/("""
+      """),format.raw/*41.7*/(""".h3-1"""),format.raw/*41.12*/("""{"""),format.raw/*41.13*/("""
+        """),format.raw/*42.9*/("""color: white; text-shadow: black 0.1em 0.1em 0.2em
+      """),format.raw/*43.7*/("""}"""),format.raw/*43.8*/("""
 
-    """),format.raw/*59.5*/("""</style>
+    """),format.raw/*45.5*/("""</style>
   </head>
 
   <body>
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">&nbsp&nbsp&nbsp&nbspEC on BC&nbsp&nbsp&nbsp&nbsp</a>
+            <a class="navbar-brand" href="/">&nbsp&nbsp&nbsp&nbsp&nbspEC on BC&nbsp&nbsp&nbsp&nbsp</a>
         </div>
         <div>
             <ul class="nav navbar-nav">
@@ -101,8 +87,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                 <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbspAbout</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <!--  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  -->
+                <li><a href="https://github.com/gyfei/BC-EC"><span class="glyphicon glyphicon-file"></span> Source</a></li>
             </ul>
         </div>
         </div>
@@ -137,11 +124,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object header extends header_Scope0.header
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 19:19:59 JST 2015
+                  DATE: Wed Jun 17 20:06:49 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/header.scala.html
-                  HASH: e70f8134b0338b9acbb5d828bfe3ceb423991408
-                  MATRIX: 611->0|767->130|781->136|847->182|1333->640|1362->641|1398->650|1462->686|1491->687|1545->713|1730->871|1759->872|1804->890|1832->891|1884->915|1913->916|1943->919|2004->952|2033->953|2065->958|2119->984|2148->985|2182->992|2251->1034|2279->1035|2311->1040|2352->1054|2380->1055|2411->1059|2554->1174|2583->1175|2617->1182|2741->1278|2770->1279|2804->1286|2873->1328|2901->1329|2934->1335|2965->1339|2994->1340|3061->1379|3090->1380|3120->1383|3148->1384|3178->1387|3206->1388|3287->1442|3316->1443|3352->1452|3507->1580|3535->1581|3569->1588|3602->1593|3631->1594|3667->1603|3751->1660|3779->1661|3812->1667
-                  LINES: 25->1|28->4|28->4|28->4|40->16|40->16|41->17|41->17|41->17|43->19|47->23|47->23|49->25|49->25|51->27|51->27|52->28|52->28|52->28|53->29|53->29|53->29|54->30|55->31|55->31|56->32|57->33|57->33|59->35|62->38|62->38|63->39|65->41|65->41|66->42|67->43|67->43|68->44|68->44|68->44|68->44|68->44|69->45|69->45|70->46|70->46|74->50|74->50|75->51|78->54|78->54|79->55|79->55|79->55|80->56|81->57|81->57|83->59
+                  HASH: 72030173ba35a5bc4b575e371385e3174667f1d8
+                  MATRIX: 611->0|767->130|781->136|847->182|1313->620|1342->621|1378->630|1439->663|1468->664|1507->675|1561->701|1590->702|1631->715|1707->763|1736->764|1775->775|1822->795|1851->796|1887->805|2041->931|2070->932|2111->945|2240->1046|2269->1047|2310->1060|2386->1108|2415->1109|2455->1121|2487->1125|2516->1126|2583->1165|2612->1166|2648->1175|2677->1176|2713->1185|2741->1186|2822->1240|2851->1241|2887->1250|3042->1378|3070->1379|3104->1386|3137->1391|3166->1392|3202->1401|3286->1458|3314->1459|3347->1465
+                  LINES: 25->1|28->4|28->4|28->4|40->16|40->16|41->17|41->17|41->17|42->18|42->18|42->18|43->19|44->20|44->20|45->21|46->22|46->22|47->23|49->25|49->25|50->26|51->27|51->27|52->28|53->29|53->29|54->30|54->30|54->30|54->30|54->30|55->31|55->31|56->32|56->32|60->36|60->36|61->37|64->40|64->40|65->41|65->41|65->41|66->42|67->43|67->43|69->45
                   -- GENERATED --
               */
           
