@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kou/git/BC-EC/conf/routes
-// @DATE:Wed Jun 17 20:41:52 JST 2015
+// @DATE:Wed Jun 17 21:40:31 JST 2015
 
 package router
 
@@ -17,7 +17,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:9
   Application_1: controllers.Application,
-  // @LINE:20
+  // @LINE:23
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -26,7 +26,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:9
     Application_1: controllers.Application,
-    // @LINE:20
+    // @LINE:23
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -47,6 +47,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """verify""", """controllers.Application.verify"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """about""", """controllers.Application.about"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """start""", """controllers.Application.start"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """hash_file""", """controllers.Application.hash_file"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -141,10 +142,27 @@ class Routes(
   )
 
   // @LINE:20
-  private[this] lazy val controllers_Assets_versioned5_route = Route("GET",
+  private[this] lazy val controllers_Application_hash_file5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("hash_file")))
+  )
+  private[this] lazy val controllers_Application_hash_file5_invoker = createInvoker(
+    Application_1.hash_file,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "hash_file",
+      Nil,
+      "GET",
+      """ show hash value of file""",
+      this.prefix + """hash_file"""
+    )
+  )
+
+  // @LINE:23
+  private[this] lazy val controllers_Assets_versioned6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -191,9 +209,15 @@ class Routes(
       }
   
     // @LINE:20
-    case controllers_Assets_versioned5_route(params) =>
+    case controllers_Application_hash_file5_route(params) =>
+      call { 
+        controllers_Application_hash_file5_invoker.call(Application_1.hash_file)
+      }
+  
+    // @LINE:23
+    case controllers_Assets_versioned6_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned5_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned6_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

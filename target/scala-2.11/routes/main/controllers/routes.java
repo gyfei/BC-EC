@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kou/git/BC-EC/conf/routes
-// @DATE:Wed Jun 17 20:41:52 JST 2015
+// @DATE:Wed Jun 17 21:40:31 JST 2015
 
 package controllers;
 

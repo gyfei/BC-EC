@@ -72,9 +72,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
 <!-- Write explaination in other files and include contents  -->
 <div class="container">
-    <div> Expain S&T</div>
-    <div> Expain Verification</div>
-    <div> Expain DS & TS & Blockchain</div>
+    <div> TODO: Expain S&T</div>
+    <div> TODO: Expain Verification</div>
+    <div> TODO: Expain DS & TS & Blockchain</div>
     </div>
 
 
@@ -102,10 +102,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object elecon extends elecon_Scope0.elecon
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 20:58:40 JST 2015
+                  DATE: Wed Jun 17 21:10:04 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/elecon.scala.html
-                  HASH: 1c5086ca925c7ea1a9e87142e6aba4b1bc7d8dc3
-                  MATRIX: 611->0|711->75|739->83|770->88|841->132|869->133|904->142|949->161|976->162|1016->175|3012->2145|3041->2153|3069->2154
+                  HASH: a563affc7213211315548b7bffb8ad4210308d7e
+                  MATRIX: 611->0|711->75|739->83|770->88|841->132|869->133|904->142|949->161|976->162|1016->175|3030->2163|3059->2171|3087->2172
                   LINES: 25->1|29->5|29->5|30->6|31->7|31->7|32->8|33->9|33->9|36->12|84->60|84->60|85->61
                   -- GENERATED --
               */

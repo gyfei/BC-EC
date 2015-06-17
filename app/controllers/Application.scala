@@ -38,6 +38,10 @@ class Application extends Controller {
   	Ok(views.html.start.render())
   }
 
+  def hash_file = Action {
+  	Ok(views.html.hash_file.render())
+  }
+
 
 }
 

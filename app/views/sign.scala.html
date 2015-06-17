@@ -12,6 +12,11 @@
   <head>
     <title>EC on BC-Sign</title>
     @header()
+
+    
+    
+
+
     <style type="text/css">
      .container-bg{
         margin-left: 120px;
@@ -27,12 +32,47 @@
     <div class="container">
       <div class="jumbotron" style="background-color: #FFF5EE;">
         <br> how to sign?
-        <p>Select a contract:</p>
-        <input type="file" name="contract">
+        <p>Select a contract:
+        <form action="/hash_file">
+          
+            <label id="selcon">
+              <input type="file" name="selcon" id="selcon" enctype="multipart/form-data">
+            </label>
+
+            <label id="hash_contract">
+              <textarea type="text"  name="conHash"  id="conHash"  style="height:50px; width:500px; background-color: #FFF5EE;"></textarea>
+              <br>
+              <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+              <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
+              <script type="text/javascript">
+              document.getElementById("hash_contract").style.display="none";
+              function handleFileSelect(evt) {
+                var files = evt.target.files; // FileList object
+                var output = [];
+                for (var i = 0, f; f = files[i]; i++) {
+                  var reader = new FileReader();
+                  reader.onload = (function(theFile) {
+                    return function(e) {
+                      var element = document.getElementById('conHash');
+                      element.value = CryptoJS.SHA256(e.target.result);
+                      document.getElementById("hash_contract").style.display="block";
+                    };
+                  })(f);
+                  reader.readAsDataURL(f);
+                }
+              }
+              document.getElementById('selcon').addEventListener('change', handleFileSelect, false);
+
+              </script>
+            </label>
+  
+       
         <p><div class="container">
-        <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract.">Sign</button>
+        <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract." name="sign">Hash</button>
+        <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract." name="sign">Sign</button>
 		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Give the contract a timestamp.">Timestamp</button>
 		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign & Timestamp the contract.">S&T</button></p>
+        </form>
       </div>
     </div>
 
@@ -42,7 +82,7 @@
   		<strong>Success!</strong> Your contract have been uploaded successfully!
    	</div>
   -->
-    </div>
+    
   </body>
     @footer()
 </html>
