@@ -8,9 +8,6 @@
 
 }
 
-
-
-
 <html lang="en">
   <head>
     <title>EC on BC-Sign</title>
@@ -29,12 +26,13 @@
   <body>
     <div class="container">
       <div class="jumbotron" style="background-color: #FFF5EE;">
+        <br> how to sign?
         <p>Select a contract:</p>
         <input type="file" name="contract">
         <p><div class="container">
-        <button type="button" class="btn btn-primary">Sign</button>
-		    <button type="button" class="btn btn-primary">Timestamp</button>
-		    <button type="button" class="btn btn-primary">S&T</button></p>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract.">Sign</button>
+		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Give the contract a timestamp.">Timestamp</button>
+		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign & Timestamp the contract.">S&T</button></p>
       </div>
     </div>
 

@@ -11,6 +11,10 @@ GET     /                           controllers.Application.elecon
 GET     /sign                       controllers.Application.sign
 # Verify page
 GET     /verify                     controllers.Application.verify
+# About this site
+GET     /about                      controllers.Application.about
+# Start to use
+GET     /start                      controllers.Application.start
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file)

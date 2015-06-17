@@ -44,17 +44,18 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <body>
       <div class="container">
       <div class="jumbotron" style="background-color: #FFF5EE;">
+      <br> how to verify?
         <p>Select a contract:</p>
         <input type="file" name="contract">
         <p><div class="container">
-          <button type="button" class="btn btn-primary">Search</button>
-		  <button type="button" class="btn btn-primary">Verify</button>
+          <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Search the contract in Blockchain.">Search</button>
+		  <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Verify the contract.">Verify</button>
         </div></p>
       </div>
       </div>
     </body>
-    """),_display_(/*32.6*/footer()),format.raw/*32.14*/("""
-"""),format.raw/*33.1*/("""</html>"""))
+    """),_display_(/*33.6*/footer()),format.raw/*33.14*/("""
+"""),format.raw/*34.1*/("""</html>"""))
       }
     }
   }
@@ -74,11 +75,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object verify extends verify_Scope0.verify
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 19:55:12 JST 2015
+                  DATE: Wed Jun 17 21:01:06 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/verify.scala.html
-                  HASH: 04df841531791cab0b56e025b98e0b368e308594
-                  MATRIX: 611->0|718->82|746->90|776->94|845->136|873->137|909->146|1050->260|1078->261|1116->272|1582->712|1611->720|1639->721
-                  LINES: 25->1|31->7|31->7|32->8|33->9|33->9|34->10|38->14|38->14|40->16|56->32|56->32|57->33
+                  HASH: d7851dd1f44e5a94e13aad7dec394b80603c2629
+                  MATRIX: 611->0|718->82|746->90|776->94|845->136|873->137|909->146|1050->260|1078->261|1116->272|1724->854|1753->862|1781->863
+                  LINES: 25->1|31->7|31->7|32->8|33->9|33->9|34->10|38->14|38->14|40->16|57->33|57->33|58->34
                   -- GENERATED --
               */
           

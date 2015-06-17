@@ -32,33 +32,31 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
 
 """)))}),format.raw/*9.2*/("""
 
-
-
-
-"""),format.raw/*14.1*/("""<html lang="en">
+"""),format.raw/*11.1*/("""<html lang="en">
   <head>
     <title>EC on BC-Sign</title>
-    """),_display_(/*17.6*/header()),format.raw/*17.14*/("""
-    """),format.raw/*18.5*/("""<style type="text/css">
-     .container-bg"""),format.raw/*19.19*/("""{"""),format.raw/*19.20*/("""
-        """),format.raw/*20.9*/("""margin-left: 120px;
+    """),_display_(/*14.6*/header()),format.raw/*14.14*/("""
+    """),format.raw/*15.5*/("""<style type="text/css">
+     .container-bg"""),format.raw/*16.19*/("""{"""),format.raw/*16.20*/("""
+        """),format.raw/*17.9*/("""margin-left: 120px;
         margin-right: 120px;
         margin-top: 0px;
         background-color: #FFF5EE;
-     """),format.raw/*24.6*/("""}"""),format.raw/*24.7*/("""
+     """),format.raw/*21.6*/("""}"""),format.raw/*21.7*/("""
      
-    """),format.raw/*26.5*/("""</style>
+    """),format.raw/*23.5*/("""</style>
   </head>
 
   <body>
     <div class="container">
       <div class="jumbotron" style="background-color: #FFF5EE;">
+        <br> how to sign?
         <p>Select a contract:</p>
         <input type="file" name="contract">
         <p><div class="container">
-        <button type="button" class="btn btn-primary">Sign</button>
-		    <button type="button" class="btn btn-primary">Timestamp</button>
-		    <button type="button" class="btn btn-primary">S&T</button></p>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract.">Sign</button>
+		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Give the contract a timestamp.">Timestamp</button>
+		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign & Timestamp the contract.">S&T</button></p>
       </div>
     </div>
 
@@ -70,8 +68,8 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
   -->
     </div>
   </body>
-    """),_display_(/*49.6*/footer()),format.raw/*49.14*/("""
-"""),format.raw/*50.1*/("""</html>"""))
+    """),_display_(/*47.6*/footer()),format.raw/*47.14*/("""
+"""),format.raw/*48.1*/("""</html>"""))
       }
     }
   }
@@ -91,11 +89,11 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
 object sign extends sign_Scope0.sign
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 19:55:24 JST 2015
+                  DATE: Wed Jun 17 21:00:42 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/sign.scala.html
-                  HASH: 862e2c37a6ea2eb53b661e18fc24544004bbcd9a
-                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|989->249|1079->313|1108->321|1140->326|1210->368|1239->369|1275->378|1416->492|1444->493|1482->504|2226->1222|2255->1230|2283->1231
-                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|38->14|41->17|41->17|42->18|43->19|43->19|44->20|48->24|48->24|50->26|73->49|73->49|74->50
+                  HASH: a5ec11d2a4636a2725c9b97d10949ebc6007becb
+                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|986->246|1076->310|1105->318|1137->323|1207->365|1236->366|1272->375|1413->489|1441->490|1479->501|2420->1416|2449->1424|2477->1425
+                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|35->11|38->14|38->14|39->15|40->16|40->16|41->17|45->21|45->21|47->23|71->47|71->47|72->48
                   -- GENERATED --
               */
           

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kou/git/BC-EC/conf/routes
-// @DATE:Wed Jun 17 17:58:54 JST 2015
+// @DATE:Wed Jun 17 20:41:52 JST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -14,7 +14,7 @@ import _root_.controllers.Assets.Asset
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:16
+  // @LINE:20
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -22,7 +22,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:16
+    // @LINE:20
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -42,12 +42,32 @@ package controllers.javascript {
     }
 
   
+    // @LINE:17
+    def start: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.start",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "start"})
+        }
+      """
+    )
+  
     // @LINE:13
     def verify: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.verify",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "verify"})
+        }
+      """
+    )
+  
+    // @LINE:15
+    def about: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.about",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "about"})
         }
       """
     )

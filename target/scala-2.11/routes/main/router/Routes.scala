@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kou/git/BC-EC/conf/routes
-// @DATE:Wed Jun 17 17:58:54 JST 2015
+// @DATE:Wed Jun 17 20:41:52 JST 2015
 
 package router
 
@@ -17,7 +17,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:9
   Application_1: controllers.Application,
-  // @LINE:16
+  // @LINE:20
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -26,7 +26,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:9
     Application_1: controllers.Application,
-    // @LINE:16
+    // @LINE:20
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -45,6 +45,8 @@ class Routes(
     ("""GET""", this.prefix, """controllers.Application.elecon"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """sign""", """controllers.Application.sign"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """verify""", """controllers.Application.verify"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """about""", """controllers.Application.about"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """start""", """controllers.Application.start"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -104,11 +106,45 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_Assets_versioned3_route = Route("GET",
+  // @LINE:15
+  private[this] lazy val controllers_Application_about3_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("about")))
+  )
+  private[this] lazy val controllers_Application_about3_invoker = createInvoker(
+    Application_1.about,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "about",
+      Nil,
+      "GET",
+      """ About this site""",
+      this.prefix + """about"""
+    )
+  )
+
+  // @LINE:17
+  private[this] lazy val controllers_Application_start4_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("start")))
+  )
+  private[this] lazy val controllers_Application_start4_invoker = createInvoker(
+    Application_1.start,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "start",
+      Nil,
+      "GET",
+      """ Start to use""",
+      this.prefix + """start"""
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_Assets_versioned5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -142,10 +178,22 @@ class Routes(
         controllers_Application_verify2_invoker.call(Application_1.verify)
       }
   
-    // @LINE:16
-    case controllers_Assets_versioned3_route(params) =>
+    // @LINE:15
+    case controllers_Application_about3_route(params) =>
+      call { 
+        controllers_Application_about3_invoker.call(Application_1.about)
+      }
+  
+    // @LINE:17
+    case controllers_Application_start4_route(params) =>
+      call { 
+        controllers_Application_start4_invoker.call(Application_1.start)
+      }
+  
+    // @LINE:20
+    case controllers_Assets_versioned5_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_versioned3_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned5_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

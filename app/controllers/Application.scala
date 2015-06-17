@@ -31,6 +31,12 @@ class Application extends Controller {
   def verify = Action {
   	Ok(views.html.verify.render())
   }
+  def about = Action {
+  	Ok(views.html.about.render())
+  }
+  def start = Action {
+  	Ok(views.html.start.render())
+  }
 
 
 }

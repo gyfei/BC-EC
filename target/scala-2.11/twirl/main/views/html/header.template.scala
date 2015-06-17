@@ -84,7 +84,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
               <!--Verify-->
                 <li><a href="/verify"><span class="glyphicon glyphicon-check"></span>&nbspVerify</a></li> 
               <!--About-->
-                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbspAbout</a></li> 
+                <li><a href="/about"><span class="glyphicon glyphicon-question-sign"></span>&nbspAbout</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <!--  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -99,6 +99,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
         <div class="jumbotron" style="background-image: url(http://www.contractil.com/wp-content/uploads/2013/11/contract.jpg); background-size: 100%; opacity: 0.7;">
             <h1>Eletronic Contracts on Blockchain</h1>
             <h3 class="h3-1">Sign & Timestamp your contracts on Blockchain</h3> 
+            <br><a href="/start" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-edit"></span>&nbsp&nbspHow to use?&nbsp&nbsp</a>
         </div>
       </div>
 
@@ -124,9 +125,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object header extends header_Scope0.header
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 20:06:49 JST 2015
+                  DATE: Wed Jun 17 20:53:12 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/header.scala.html
-                  HASH: 72030173ba35a5bc4b575e371385e3174667f1d8
+                  HASH: 31e83cceca4b7b887b71365539b705990b2fb5e7
                   MATRIX: 611->0|767->130|781->136|847->182|1313->620|1342->621|1378->630|1439->663|1468->664|1507->675|1561->701|1590->702|1631->715|1707->763|1736->764|1775->775|1822->795|1851->796|1887->805|2041->931|2070->932|2111->945|2240->1046|2269->1047|2310->1060|2386->1108|2415->1109|2455->1121|2487->1125|2516->1126|2583->1165|2612->1166|2648->1175|2677->1176|2713->1185|2741->1186|2822->1240|2851->1241|2887->1250|3042->1378|3070->1379|3104->1386|3137->1391|3166->1392|3202->1401|3286->1458|3314->1459|3347->1465
                   LINES: 25->1|28->4|28->4|28->4|40->16|40->16|41->17|41->17|41->17|42->18|42->18|42->18|43->19|44->20|44->20|45->21|46->22|46->22|47->23|49->25|49->25|50->26|51->27|51->27|52->28|53->29|53->29|54->30|54->30|54->30|54->30|54->30|55->31|55->31|56->32|56->32|60->36|60->36|61->37|64->40|64->40|65->41|65->41|65->41|66->42|67->43|67->43|69->45
                   -- GENERATED --
