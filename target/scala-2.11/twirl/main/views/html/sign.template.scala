@@ -48,8 +48,14 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
         margin-top: 0px;
         background-color: #FFF5EE;
      """),format.raw/*26.6*/("""}"""),format.raw/*26.7*/("""
+     """),format.raw/*27.6*/("""textarea """),format.raw/*27.15*/("""{"""),format.raw/*27.16*/("""
+        """),format.raw/*28.9*/("""border-color: Transparent;
+        outline: none;
+        resize: none;
+      """),format.raw/*31.7*/("""}"""),format.raw/*31.8*/("""
+
      
-    """),format.raw/*28.5*/("""</style>
+    """),format.raw/*34.5*/("""</style>
   </head>
 
   <body>
@@ -64,28 +70,28 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
             </label>
 
             <label id="hash_contract">
-              <textarea type="text"  name="conHash"  id="conHash"  style="height:50px; width:500px; background-color: #FFF5EE;"></textarea>
+              <textarea type="text"  name="conHash"  id="conHash"  style="height:50px; width:800px; background-color: #FFF5EE;"></textarea>
               <br>
               <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
               <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
               <script type="text/javascript">
               document.getElementById("hash_contract").style.display="none";
-              function handleFileSelect(evt) """),format.raw/*49.46*/("""{"""),format.raw/*49.47*/("""
-                """),format.raw/*50.17*/("""var files = evt.target.files; // FileList object
+              function handleFileSelect(evt) """),format.raw/*55.46*/("""{"""),format.raw/*55.47*/("""
+                """),format.raw/*56.17*/("""var files = evt.target.files; // FileList object
                 var output = [];
-                for (var i = 0, f; f = files[i]; i++) """),format.raw/*52.55*/("""{"""),format.raw/*52.56*/("""
-                  """),format.raw/*53.19*/("""var reader = new FileReader();
-                  reader.onload = (function(theFile) """),format.raw/*54.54*/("""{"""),format.raw/*54.55*/("""
-                    """),format.raw/*55.21*/("""return function(e) """),format.raw/*55.40*/("""{"""),format.raw/*55.41*/("""
-                      """),format.raw/*56.23*/("""var element = document.getElementById('conHash');
+                for (var i = 0, f; f = files[i]; i++) """),format.raw/*58.55*/("""{"""),format.raw/*58.56*/("""
+                  """),format.raw/*59.19*/("""var reader = new FileReader();
+                  reader.onload = (function(theFile) """),format.raw/*60.54*/("""{"""),format.raw/*60.55*/("""
+                    """),format.raw/*61.21*/("""return function(e) """),format.raw/*61.40*/("""{"""),format.raw/*61.41*/("""
+                      """),format.raw/*62.23*/("""var element = document.getElementById('conHash');
                       element.value = CryptoJS.SHA256(e.target.result);
                       document.getElementById("hash_contract").style.display="block";
-                    """),format.raw/*59.21*/("""}"""),format.raw/*59.22*/(""";
-                  """),format.raw/*60.19*/("""}"""),format.raw/*60.20*/(""")(f);
+                    """),format.raw/*65.21*/("""}"""),format.raw/*65.22*/(""";
+                  """),format.raw/*66.19*/("""}"""),format.raw/*66.20*/(""")(f);
                   reader.readAsDataURL(f);
-                """),format.raw/*62.17*/("""}"""),format.raw/*62.18*/("""
-              """),format.raw/*63.15*/("""}"""),format.raw/*63.16*/("""
-              """),format.raw/*64.15*/("""document.getElementById('selcon').addEventListener('change', handleFileSelect, false);
+                """),format.raw/*68.17*/("""}"""),format.raw/*68.18*/("""
+              """),format.raw/*69.15*/("""}"""),format.raw/*69.16*/("""
+              """),format.raw/*70.15*/("""document.getElementById('selcon').addEventListener('change', handleFileSelect, false);
 
               </script>
             </label>
@@ -108,8 +114,8 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
   -->
     
   </body>
-    """),_display_(/*87.6*/footer()),format.raw/*87.14*/("""
-"""),format.raw/*88.1*/("""</html>"""))
+    """),_display_(/*93.6*/footer()),format.raw/*93.14*/("""
+"""),format.raw/*94.1*/("""</html>"""))
       }
     }
   }
@@ -129,11 +135,11 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
 object sign extends sign_Scope0.sign
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 22:30:36 JST 2015
+                  DATE: Wed Jun 17 22:45:51 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/sign.scala.html
-                  HASH: 5f2ebb8214b21029d2f78fdfbd10d83216a9516a
-                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|986->246|1076->310|1105->318|1150->336|1220->378|1249->379|1285->388|1426->502|1454->503|1492->514|2475->1469|2504->1470|2549->1487|2713->1623|2742->1624|2789->1643|2901->1727|2930->1728|2979->1749|3026->1768|3055->1769|3106->1792|3362->2020|3391->2021|3439->2041|3468->2042|3561->2107|3590->2108|3633->2123|3662->2124|3705->2139|4715->3123|4744->3131|4772->3132
-                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|35->11|38->14|38->14|44->20|45->21|45->21|46->22|50->26|50->26|52->28|73->49|73->49|74->50|76->52|76->52|77->53|78->54|78->54|79->55|79->55|79->55|80->56|83->59|83->59|84->60|84->60|86->62|86->62|87->63|87->63|88->64|111->87|111->87|112->88
+                  HASH: a34aa81c6379c085c9b20be87d5f95ab5f0cf689
+                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|986->246|1076->310|1105->318|1150->336|1220->378|1249->379|1285->388|1426->502|1454->503|1487->509|1524->518|1553->519|1589->528|1694->606|1722->607|1761->619|2744->1574|2773->1575|2818->1592|2982->1728|3011->1729|3058->1748|3170->1832|3199->1833|3248->1854|3295->1873|3324->1874|3375->1897|3631->2125|3660->2126|3708->2146|3737->2147|3830->2212|3859->2213|3902->2228|3931->2229|3974->2244|4984->3228|5013->3236|5041->3237
+                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|35->11|38->14|38->14|44->20|45->21|45->21|46->22|50->26|50->26|51->27|51->27|51->27|52->28|55->31|55->31|58->34|79->55|79->55|80->56|82->58|82->58|83->59|84->60|84->60|85->61|85->61|85->61|86->62|89->65|89->65|90->66|90->66|92->68|92->68|93->69|93->69|94->70|117->93|117->93|118->94
                   -- GENERATED --
               */
           
