@@ -4,7 +4,7 @@
 		module="elecon_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150616155352"
+		publication="20150617082241"
 	>
 		<description>
 		elecon
@@ -43,5 +43,8 @@
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.4.0" conf="test->default(compile)"/>
+		<dependency org="com.adrianhurt" name="play-bootstrap3_2.11" rev="0.4.2" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="webjars-play_2.11" rev="2.3.0" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="bootstrap" rev="3.2.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -1,9 +1,22 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
+# support GET、POST、PUT、DELETE and HEAD
+# static: /notes/home  dynamic: /notes/{id} (/notes/123, /notes/abc)
+
 
 # Home page
-GET     /                           controllers.Application.index
+GET     /                           controllers.Application.elecon
+# Sign page
+GET     /sign                       controllers.Application.sign
+# Verify page
+GET     /verify                     controllers.Application.verify
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file)
+#GET     /webjars/*file                    controllers.WebJarAssets.at(file)
+
+
+
+
+

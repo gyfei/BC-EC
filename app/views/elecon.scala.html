@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.css")">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
+<html lang="en">
+   <title>EC on BC-Homepage</title>
+    @header()
+    <style type="text/css">
+      .panel-height {
+              height: 130px;
+        }
+
+    </style>
+    <body>
+      <div class="container">
+        <div class="row">
+            <div class="panel-group">
+              <!--S&T-->
+                <div class="col-sm-4">
+                  <div class = "panel panel-info">
+                    <div class="panel-heading"><h3><span class="glyphicon glyphicon-pencil"></span>&nbspSign & Timestamp&nbsp<span class="glyphicon glyphicon-time"></h3></div>
+                    <div class="panel-body panel-height"><p>Upload a contract</p>
+                    <p>Sign and Timestamp the contract</p></div>
+                  </div>
+                </div>
+
+              <!--Verify-->
+                <div class="col-sm-4">
+                  <div class = "panel panel-success">
+                    <div class="panel-heading"><h3><span class="glyphicon glyphicon-check"></span>&nbspVerify</h3></div>
+                    <div class="panel-body panel-height"><p>Upload a contract or input the Contract ID</p>
+                    <p>Check if the contract being signed and its integrity</p></div>
+                  </div>
+                </div>
+
+              <!--About-->
+                <div class="col-sm-4">
+                  <div class = "panel panel-warning">
+                    <div class="panel-heading"><h3><span class="glyphicon glyphicon-question-sign"></span>&nbspAbout</h3></div>
+                    <div class="panel-body panel-height"><p>Learn the Digital Signature and Timestamp</p>
+                    <p>Learn what Blockchain is</p></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+
+    <hr>
+    @footer()
+</html>

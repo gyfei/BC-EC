@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- Defines a link between a document and an external resource -->
+<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.css")">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('ul.nav > li').click(function (e) {
+            
+            $('ul.nav > li').removeClass('active');
+            $(this).addClass('active');             
+        }
+        e.preventDefault();
+      });
+    </script>
+
+    <style type="text/css">
+      h1{
+        color: black !important; 
+        text-shadow: 0 0 0.2em #F0FFF0, 0 0 0.2em #F0FFF0, 0 0 0.2em #F0FFF0;
+        opacity: 1;
+    }
+      .h3-1{
+        color: white; text-shadow: black 0.1em 0.1em 0.2em
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">&nbsp&nbsp&nbsp&nbspEC on BC&nbsp&nbsp&nbsp&nbsp</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+              <!--Home-->
+                <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>&nbspHome</a></li>
+              <!--S&T-->
+                <li><a href="/sign"><span class="glyphicon glyphicon-pencil"></span>&nbspS&T&nbsp<span class="glyphicon glyphicon-time"></span></a></li>
+              <!--Verify-->
+                <li><a href="/verify"><span class="glyphicon glyphicon-check"></span>&nbspVerify</a></li> 
+              <!--About-->
+                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbspAbout</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="jumbotron" style="background-image: url(http://www.contractil.com/wp-content/uploads/2013/11/contract.jpg); background-size: 100%; opacity: 0.7;">
+            <h1>Eletronic Contracts on Blockchain</h1>
+            <h3 class="h3-1">Sign & Timestamp your contracts on Blockchain</h3> 
+        </div>
+      </div>
+
+
+  </body>
+</html>

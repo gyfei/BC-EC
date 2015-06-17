@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kou/git/BC-EC/conf/routes
-// @DATE:Tue Jun 16 15:54:00 JST 2015
+// @DATE:Wed Jun 17 17:58:54 JST 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -9,35 +9,47 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 
 import _root_.controllers.Assets.Asset
 
-// @LINE:6
+// @LINE:9
 package controllers {
 
-  // @LINE:9
+  // @LINE:16
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:9
-    def versioned(file:Asset): Call = {
+    // @LINE:16
+    def versioned(file:String): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
-      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
+      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
     }
   
   }
 
-  // @LINE:6
+  // @LINE:9
   class ReverseApplication(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:6
-    def index(): Call = {
+    // @LINE:13
+    def verify(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "verify")
+    }
+  
+    // @LINE:9
+    def elecon(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix)
+    }
+  
+    // @LINE:11
+    def sign(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "sign")
     }
   
   }

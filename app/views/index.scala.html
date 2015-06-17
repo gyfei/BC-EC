@@ -1,5 +1,11 @@
-@(message: String)
+// send a parameter: message(= "Your new application in ready" 
+// in Application.scala) 
+@(messages: String)
 
+// mix of HTML & scala
+// which starts from @ are scalas
+
+//get main template(get from main.scala.html)
 @main("Welcome to Play") {
 
     @play20.welcome(message)

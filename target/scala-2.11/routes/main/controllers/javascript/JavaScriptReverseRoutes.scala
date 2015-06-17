@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kou/git/BC-EC/conf/routes
-// @DATE:Tue Jun 16 15:54:00 JST 2015
+// @DATE:Wed Jun 17 17:58:54 JST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -10,11 +10,11 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 
 import _root_.controllers.Assets.Asset
 
-// @LINE:6
+// @LINE:9
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:9
+  // @LINE:16
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -22,19 +22,19 @@ package controllers.javascript {
     }
 
   
-    // @LINE:9
+    // @LINE:16
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
         function(file) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[Asset]].javascriptUnbind + """)("file", file)})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("file", file)})
         }
       """
     )
   
   }
 
-  // @LINE:6
+  // @LINE:9
   class ReverseApplication(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -42,12 +42,32 @@ package controllers.javascript {
     }
 
   
-    // @LINE:6
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.index",
+    // @LINE:13
+    def verify: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.verify",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "verify"})
+        }
+      """
+    )
+  
+    // @LINE:9
+    def elecon: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.elecon",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:11
+    def sign: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.sign",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sign"})
         }
       """
     )

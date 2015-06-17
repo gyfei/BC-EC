@@ -1,0 +1,37 @@
+<!-- todo1: rewrite with jade -->
+<!-- todo2: add CSS(or LESS?) -->
+<!-- todo2.5: animate.css-->
+<!-- todo3: make head in a separate file-->
+
+<!DOCTYPE html>
+@helper.form(action = routes.Application.sign, 'enctype -> "multipart/form-data") {
+
+}
+
+
+
+
+<html lang="en">
+  <title>EC on BC-Sign</title>
+   @header()
+    <body>
+    <div class="container">
+        <p>Select a contract:</p>
+        <input type="file" name="contract">
+    <p><div class="container">
+        <button type="button" class="btn btn-primary">Sign</button>
+		<button type="button" class="btn btn-primary">Timestamp</button>
+		<button type="button" class="btn btn-primary">Verify</button>
+    </div></p>
+
+    <!-- can't be closed-->
+    <div class="alert alert-success">
+    	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>Success!</strong> Your contract have been uploaded successfully!
+   	</div>
+    
+    <div id="footer"></div>
+</div>
+    </body>
+    @footer()
+</html>
