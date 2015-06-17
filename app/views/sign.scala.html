@@ -27,7 +27,10 @@
      textarea {
         border-color: Transparent;
         outline: none;
+        height:50px; 
+        width:800px; 
         resize: none;
+        background-color: #FFF5EE;
       }
 
      
@@ -40,13 +43,13 @@
         <br> how to sign?
         <p>Select a contract:
         <form action="/hash_file">
-          
+          <!-- Read contract, hash locally, and show hash(contract) on the same page.-->
             <label id="selcon">
               <input type="file" name="selcon" id="selcon" enctype="multipart/form-data">
             </label>
 
             <label id="hash_contract">
-              <textarea type="text"  name="conHash"  id="conHash"  style="height:50px; width:800px; background-color: #FFF5EE;"></textarea>
+              <textarea type="text"  name="conHash"  id="conHash"></textarea>
               <br>
               <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
               <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
@@ -74,7 +77,6 @@
   
        
         <p><div class="container">
-        <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract." name="sign">Hash</button>
         <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract." name="sign">Sign</button>
 		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Give the contract a timestamp.">Timestamp</button>
 		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign & Timestamp the contract.">S&T</button></p>

@@ -52,10 +52,12 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
         """),format.raw/*28.9*/("""border-color: Transparent;
         outline: none;
         resize: none;
-      """),format.raw/*31.7*/("""}"""),format.raw/*31.8*/("""
+        height:50px; width:800px; 
+        background-color: #FFF5EE;
+      """),format.raw/*33.7*/("""}"""),format.raw/*33.8*/("""
 
      
-    """),format.raw/*34.5*/("""</style>
+    """),format.raw/*36.5*/("""</style>
   </head>
 
   <body>
@@ -64,41 +66,40 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
         <br> how to sign?
         <p>Select a contract:
         <form action="/hash_file">
-          
+          <!-- Read contract, hash locally, and show hash(contract) on the same page.-->
             <label id="selcon">
               <input type="file" name="selcon" id="selcon" enctype="multipart/form-data">
             </label>
 
             <label id="hash_contract">
-              <textarea type="text"  name="conHash"  id="conHash"  style="height:50px; width:800px; background-color: #FFF5EE;"></textarea>
+              <textarea type="text"  name="conHash"  id="conHash" ></textarea>
               <br>
               <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
               <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
               <script type="text/javascript">
               document.getElementById("hash_contract").style.display="none";
-              function handleFileSelect(evt) """),format.raw/*55.46*/("""{"""),format.raw/*55.47*/("""
-                """),format.raw/*56.17*/("""var files = evt.target.files; // FileList object
+              function handleFileSelect(evt) """),format.raw/*57.46*/("""{"""),format.raw/*57.47*/("""
+                """),format.raw/*58.17*/("""var files = evt.target.files; // FileList object
                 var output = [];
-                for (var i = 0, f; f = files[i]; i++) """),format.raw/*58.55*/("""{"""),format.raw/*58.56*/("""
-                  """),format.raw/*59.19*/("""var reader = new FileReader();
-                  reader.onload = (function(theFile) """),format.raw/*60.54*/("""{"""),format.raw/*60.55*/("""
-                    """),format.raw/*61.21*/("""return function(e) """),format.raw/*61.40*/("""{"""),format.raw/*61.41*/("""
-                      """),format.raw/*62.23*/("""var element = document.getElementById('conHash');
+                for (var i = 0, f; f = files[i]; i++) """),format.raw/*60.55*/("""{"""),format.raw/*60.56*/("""
+                  """),format.raw/*61.19*/("""var reader = new FileReader();
+                  reader.onload = (function(theFile) """),format.raw/*62.54*/("""{"""),format.raw/*62.55*/("""
+                    """),format.raw/*63.21*/("""return function(e) """),format.raw/*63.40*/("""{"""),format.raw/*63.41*/("""
+                      """),format.raw/*64.23*/("""var element = document.getElementById('conHash');
                       element.value = CryptoJS.SHA256(e.target.result);
                       document.getElementById("hash_contract").style.display="block";
-                    """),format.raw/*65.21*/("""}"""),format.raw/*65.22*/(""";
-                  """),format.raw/*66.19*/("""}"""),format.raw/*66.20*/(""")(f);
+                    """),format.raw/*67.21*/("""}"""),format.raw/*67.22*/(""";
+                  """),format.raw/*68.19*/("""}"""),format.raw/*68.20*/(""")(f);
                   reader.readAsDataURL(f);
-                """),format.raw/*68.17*/("""}"""),format.raw/*68.18*/("""
-              """),format.raw/*69.15*/("""}"""),format.raw/*69.16*/("""
-              """),format.raw/*70.15*/("""document.getElementById('selcon').addEventListener('change', handleFileSelect, false);
+                """),format.raw/*70.17*/("""}"""),format.raw/*70.18*/("""
+              """),format.raw/*71.15*/("""}"""),format.raw/*71.16*/("""
+              """),format.raw/*72.15*/("""document.getElementById('selcon').addEventListener('change', handleFileSelect, false);
 
               </script>
             </label>
   
        
         <p><div class="container">
-        <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract." name="sign">Hash</button>
         <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Sign the contract." name="sign">Sign</button>
 		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Give the contract a timestamp.">Timestamp</button>
 		    <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Sign & Timestamp the contract.">S&T</button></p>
@@ -114,8 +115,8 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
   -->
     
   </body>
-    """),_display_(/*93.6*/footer()),format.raw/*93.14*/("""
-"""),format.raw/*94.1*/("""</html>"""))
+    """),_display_(/*94.6*/footer()),format.raw/*94.14*/("""
+"""),format.raw/*95.1*/("""</html>"""))
       }
     }
   }
@@ -135,11 +136,11 @@ Seq[Any](format.raw/*1.1*/("""<!-- todo1: rewrite with jade -->
 object sign extends sign_Scope0.sign
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 17 22:45:51 JST 2015
+                  DATE: Wed Jun 17 22:48:33 JST 2015
                   SOURCE: /home/kou/git/BC-EC/app/views/sign.scala.html
-                  HASH: a34aa81c6379c085c9b20be87d5f95ab5f0cf689
-                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|986->246|1076->310|1105->318|1150->336|1220->378|1249->379|1285->388|1426->502|1454->503|1487->509|1524->518|1553->519|1589->528|1694->606|1722->607|1761->619|2744->1574|2773->1575|2818->1592|2982->1728|3011->1729|3058->1748|3170->1832|3199->1833|3248->1854|3295->1873|3324->1874|3375->1897|3631->2125|3660->2126|3708->2146|3737->2147|3830->2212|3859->2213|3902->2228|3931->2229|3974->2244|4984->3228|5013->3236|5041->3237
-                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|35->11|38->14|38->14|44->20|45->21|45->21|46->22|50->26|50->26|51->27|51->27|51->27|52->28|55->31|55->31|58->34|79->55|79->55|80->56|82->58|82->58|83->59|84->60|84->60|85->61|85->61|85->61|86->62|89->65|89->65|90->66|90->66|92->68|92->68|93->69|93->69|94->70|117->93|117->93|118->94
+                  HASH: 116d4495fa5b10a0dd63de0b60705e374bdd28c7
+                  MATRIX: 607->0|791->159|804->165|886->239|925->241|957->244|986->246|1076->310|1105->318|1150->336|1220->378|1249->379|1285->388|1426->502|1454->503|1487->509|1524->518|1553->519|1589->528|1764->676|1792->677|1831->689|2831->1661|2860->1662|2905->1679|3069->1815|3098->1816|3145->1835|3257->1919|3286->1920|3335->1941|3382->1960|3411->1961|3462->1984|3718->2212|3747->2213|3795->2233|3824->2234|3917->2299|3946->2300|3989->2315|4018->2316|4061->2331|4942->3186|4971->3194|4999->3195
+                  LINES: 25->1|31->7|31->7|31->7|31->7|33->9|35->11|38->14|38->14|44->20|45->21|45->21|46->22|50->26|50->26|51->27|51->27|51->27|52->28|57->33|57->33|60->36|81->57|81->57|82->58|84->60|84->60|85->61|86->62|86->62|87->63|87->63|87->63|88->64|91->67|91->67|92->68|92->68|94->70|94->70|95->71|95->71|96->72|118->94|118->94|119->95
                   -- GENERATED --
               */
           
